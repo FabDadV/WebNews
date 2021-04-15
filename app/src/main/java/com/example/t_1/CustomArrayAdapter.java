@@ -51,10 +51,12 @@ public class CustomArrayAdapter extends ArrayAdapter<ListItemClass> {
         {
             viewHolder = (ViewHolder) convertView.getTag();
         }
+
+        viewHolder.data1.setTextSize(20);
         viewHolder.data1.setText(listItemMain.getData_1());
         viewHolder.data2.setText(listItemMain.getData_2());
 
-                    viewHolder.data1.setTextSize(20);
+
 
 //        def_pref = PreferenceManager.getDefaultSharedPreferences(convertView.getContext());
 //        String text = def_pref.getString("main_text_size","Средний");
