@@ -74,7 +74,7 @@ public class Details extends AppCompatActivity {
     private void init()
     {
         SharedPreferences def_pref = PreferenceManager.getDefaultSharedPreferences(this);
-//        TextView tvData1 = findViewById(R.id.tvData1);
+        TextView tvData1 = findViewById(R.id.tvData1);
         listView = findViewById(R.id.listView);
         arrayList = new ArrayList<>();
         adapter = new CustomArrayAdapter(this,R.layout.list_item_1,arrayList,getLayoutInflater());
